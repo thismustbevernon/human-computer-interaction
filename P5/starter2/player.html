@@ -1,0 +1,62 @@
+<html>
+  <header>
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="./ipod.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </header>
+  <body>
+    <div id="screen">
+      <div class="head-bar">
+        <div class="back-button" onclick="location.href='songs.html'">
+          <i class="material-icons">arrow_back</i>
+        </div>
+      </div>
+      <img
+        src="images/currents.jpg"
+        alt="Currents Album Cover"
+        class="player-album-art"
+        height="240px"
+        width="240px"
+      />
+      <div>
+        <p id="player-song-name">The Less I Know The Better</p>
+        <p id="player-album-name"><em>Currents</em> - Tame Impala</p>
+      </div>
+      <input type="range" id="player-time" min="0" max="180" />
+      <div class="time">
+        <div id="time-elapsed">0:00</div>
+        <div id="time-total">3:00</div>
+      </div>
+
+      <div class="player-controls">
+        <button onclick="prevSong()">
+          <i class="material-icons">skip_previous</i>
+        </button>
+        <button onclick="switchPlay()">
+          <i class="material-icons" id="play">play_arrow</i>
+        </button>
+        <button onclick="nextSong()">
+          <i class="material-icons">skip_next</i>
+        </button>
+      </div>
+      <div class="volume-bar">
+        <div id="speaker"><i class="material-icons">volume_down</i></div>
+        <div id="vl0" class="volume-level"></div>
+        <div id="vl1" class="volume-level"></div>
+        <div id="vl2" class="volume-level"></div>
+        <div id="vl3" class="volume-level"></div>
+        <div id="vl4" class="volume-level"></div>
+        <div id="vl5" class="volume-level"></div>
+      </div>
+      <button id="down" onclick="volDown()">&mdash;</button>
+      <button id="up" onclick="volUp()">+</button>
+    </div>
+    <script src="ipod.js"></script>
+  </body>
+</html>
+<!-- 
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->

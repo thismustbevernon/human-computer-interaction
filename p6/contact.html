@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Back</a></li>
+      </ul>
+    </nav>
+    <section id="about">
+      <h1>About Me</h1>
+
+      <div id="intro">
+        <h2>Vernon Otieno</h2>
+        <h3>Computer Science Student at Northwestern</h3>
+        <p>
+          Computer science student, budding software engineer and an avid
+          fintech enthusiast. I am a detail-oriented person who loves the
+          process of problem solving and creating things. I love to brainstorm,
+          design, and develop digital products that solve every day or even
+          niche problems. The enjoyment of the process of iterating upon and
+          refining previous successes and failures is what has taken me so far
+          and will continue to bring me to new heights. My goal is to find or
+          create a place where I can use my hands-on analytical skills as well
+          as my leadership and ethics-focused communicative skills together to
+          utilize them in the fields that I love to help further technology and
+          help people.
+        </p>
+      </div>
+    </section>
+    <section id="contact">
+      <div>
+        <h1 class="headings">Contact Me</h1>
+      </div>
+
+      <div id="contact-items">
+        <div>
+          <form onsubmit="return validate()" action="" class="form">
+            <label id="name-label">Please enter a valid name</label>
+            <input
+              type="text"
+              name="name"
+              class="input"
+              id="name-input"
+              placeholder="Enter your name"
+            />
+            <label id="email-label">Please enter a valid email</label>
+            <input
+              type="text"
+              name="email"
+              class="input"
+              id="email-input"
+              placeholder="Enter your email"
+            />
+            <label id="phone-label">Please enter a valid phone number</label>
+            <input
+              type="number"
+              name="phone"
+              class="input"
+              id="phone-input"
+              placeholder="Phone Number"
+            />
+            <label for="contact-method"
+              >Select your preferred method of communication for appropriate
+              response</label
+            >
+            <select id="contact-method" name="contact-method">
+              <option value="call">Calls</option>
+              <option value="Email">Email</option>
+            </select>
+            <textarea
+              name="msg"
+              id="msg"
+              cols="30"
+              rows="10"
+              placeholder="Enter Your Message"
+            ></textarea>
+            <button type="submit" id="send">Send</button>
+          </form>
+          <div class="socials">
+            <div>
+              <i class="fa fa-envelope" id="email-icon"></i>
+              vernonowenga@gmail.com
+            </div>
+            <div>
+              <i class="fa fa-phone" id="phone-icon"></i>
+              7737549759
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

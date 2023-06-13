@@ -1,0 +1,386 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+/* Home Section */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height:840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+#home ::before{
+    content: "";
+    position: absolute;
+    top:0;
+    right:0;
+    background: url('cover_photo.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column; 
+    /* border: 1px solid white; */
+    align-items: center;
+    /* position: absolute; */
+    top:30%;
+    right:10%; 
+}
+
+.headings {
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+
+.btn {
+    padding: 10px 35px;
+    background-color: transparent;
+    border:1px solid white ;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+
+}
+
+.btn:hover {
+    cursor:pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white,0 0 10px white,0 0 15px white;
+    font-weight: bold;
+}
+
+/* About Section */
+
+#about{
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+padding: 20px;
+margin-bottom: 50px;
+
+}
+
+#pic{
+    display: flex;
+    flex-direction: column;
+    }
+
+
+#pic img{
+    width:575px ;
+    height: 400px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding:10px;
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#intro h3{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* created new highlights/recent projects section */
+#highlights{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgba(0,0,0,0.9); */
+    /* color:white; */
+    align-items: center;
+    padding: 20px;
+}
+
+.recent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.recent img{
+    width: 400px;
+    height: 300px;
+    margin:10px;
+    /*  */
+    padding: 20px;
+    border: 5px solid black;
+}
+.recent video{
+    height: 240px;
+    margin:10px;
+}
+/* added specification for hobies and interest images */
+#recent-project{
+    width: 500px;
+    background-color: white;
+  
+}
+/* added link color */
+#recent-link {
+    color: #2D033B;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+
+/* Portfolio Section */
+/* now hobies and interest section */
+#hobbies-interests{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    color:white;
+    align-items: center;
+    padding: 20px;
+}
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.collection img{
+    width: 360px;
+    height: 240px;
+    margin:10px;
+}
+.collection video{
+    height: 240px;
+    margin:10px;
+}
+/* added specification for hobies and interest images */
+#interest{
+    width: 400px;
+  
+}
+/* added link color */
+#collection-link {
+    color: #EDD2F3;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+#garage-iframe{
+    width:400px;
+    height:240px;
+}
+
+/* Contact Section */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.9);
+    color:white;
+    /* padding: 20px; */
+    /* background-color: #EDD2F3; */
+}
+/* created new contact items */
+#contact-items{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+
+}
+.socials{
+   
+     background-color: white; 
+    padding: 10px;
+    margin: 40px;
+    font-size: 2rem;
+    color:black;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* align-items: center; */
+    /* margin: 20px 0px; */
+     /* added padding */
+     padding-left: 20%;
+/* 
+    background-color: deeppink; */  
+}
+/* added new contact item social */
+/* added labels */
+#name-label{
+    color: red;
+    visibility: hidden;
+}
+#email-label{
+    color: red;
+    visibility: hidden;
+}
+#phone-label{
+    color: red;
+    visibility: hidden;
+}
+
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 60%;
+    border: none;
+    outline: none;
+}
+
+#msg{
+    width: 60%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+
+#send {
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+/* social/personal contact */
+
+#phone-icon{
+    font-size:48px;
+}
+#email-icon{
+    font-size:48px;
+}
+#contact-method{
+    width: 60%;
+}
+
+/* pdf section */
+
+#resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#my_pdf{
+    width: 70%;
+    height: 975px;
+    padding: 20px;
+    margin-left: 10%;
+}
+
+/* portfolio project added */
+/* 
+#project{
+    width: 400px;
+   background-color: crimson;
+} */
+
+
+/* the portfolio page */
+
+#portfolio-page{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.9);
+    color:white;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    /* added */
+    color:#333333;
+}
+
+.gallery-page img{
+    width: 500px;
+    /* height: 240px; */
+    height: 300px;
+    margin:10px;
+    padding: 10px;
+    /* added */
+    border:1px solid black ;
+}
+
+#project-page{
+  width: 80%;
+  background-color: white; 
+  padding: 20px;
+}

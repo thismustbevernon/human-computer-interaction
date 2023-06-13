@@ -1,0 +1,35 @@
+#heading {
+    background-color: rgb(68, 67, 64);
+    color: white;
+}
+
+.text {
+    color: brown;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+a:link {
+    color: red;
+}
+  
+a:visited {
+    color: green;
+}
+  
+  /* mouse over link */
+a:hover {
+    color: hotpink;
+}
+  
+  /* selected link */
+a:active {
+    color: blue;
+}
+
+
+.collection li {
+    color: fuchsia;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
